@@ -1,0 +1,189 @@
+<html>
+
+<head>
+  <script>
+
+    function ShowHideDiv2() {
+      var Payment1 = document.getElementById("Payment1");
+      var BCO = document.getElementById("BCO");
+      BCO.style.display = Payment1.value == "FEVER " ? "block" : "none";
+      document.getElementById("myId").required = (BCO.style.display == "block");
+      var Payment1 = document.getElementById("Payment1");
+      var BOC = document.getElementById("BOC");
+      BOC.style.display = Payment1.value == "FEVER ABOVE AGE 10 with 103 degree" ? "block" : "none";
+      document.getElementById("myId").required = (BOC.style.display == "block");
+      var Payment1 = document.getElementById("Payment1");
+      var B = document.getElementById("B");
+      B.style.display = Payment1.value == "FEVER ABOVE AGE 40 with 103 degree" ? "block" : "none";
+      document.getElementById("myId").required = (B.style.display == "block");
+
+      var Payment1 = document.getElementById("Payment1");
+      var BI = document.getElementById("BI");
+      BI.style.display = Payment1.value == "JAUNDICE ABOVE AGE 10" ? "block" : "none";
+      document.getElementById("myId").required = (BI.style.display == "block");
+
+      var Payment1 = document.getElementById("Payment1");
+      var BA = document.getElementById("BA");
+      BA.style.display = Payment1.value == "JAUNDICE ABOVE AGE 40" ? "block" : "none";
+      document.getElementById("myId").required = (BA.style.display == "block");
+
+    }
+
+  </script>
+</head>
+
+<body>
+    
+  <form action="result.php">
+    <select name="Payment 1" id="Payment1" editable="true" onchange="ShowHideDiv2()">
+      <option value="null" selected>Select... </option>
+      <option value="FEVER UNDER AGE 5 with 100 degree">FEVER</option>
+      <option value="FEVER UNDER AGE 5 with 100 degree">AGE</option>
+      <option value="FEVER ABOVE AGE 10 with 103 degree">FEVER ABOVE AGE 10 with 103 degree</option>
+      <option value="FEVER ABOVE AGE 40 with 103 degree">FEVER ABOVE AGE 40 with 103 degree</option>
+      <option value="JAUNDICE ABOVE AGE 10">JAUNDICE ABOVE AGE 10</option>
+
+      <option value="JAUNDICE ABOVE AGE 40">JAUNDICE ABOVE AGE 40</option>
+    </select>
+
+
+    <div id="BCO" style="display: none">
+
+      
+      <input name="BCO Approved" type="checkbox" value="Tussin PE 5 mg-100 mg/5 mL oral liquid" id="myId">
+      Tussin PE 5 mg-100 mg/5 mL oral liquid.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t1q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t1[]" value="morning" > MORNING
+      <input type="checkbox" name="t1[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t1[]" value="evening"> EVENING
+      <input type="checkbox" name="t1[]" value="night" > NIGHT<br>
+     <input name="BCO Approved" type="checkbox" value="Pseudogest 15 mg-5 mg-100 mg/5 mL syrup" id="myId">
+      Pseudogest 15 mg-5 mg-100 mg/5 mL syrup.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t2q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t2[]" value="morning" > MORNING
+      <input type="checkbox" name="t2[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t2[]" value="evening"> EVENING
+      <input type="checkbox" name="t2[]" value="night" > NIGHT<br>
+      <input name="BCO Approved" type="checkbox" value=" pyridoxal-5 phosphate (bulk) 100 % powder" id="myId">
+      pyridoxal-5 phosphate (bulk) 100 % powder.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t3q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t3[]" value="morning" > MORNING
+      <input type="checkbox" name="t3[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t3[]" value="evening"> EVENING
+      <input type="checkbox" name="t3[]" value="night" > NIGHT<br>
+      <input name="BCO Approved" type="checkbox" value=" pediatric multivit no.5-iron-folic acid 5 mg-100 mcg oral powder packt" id="myId">
+      pediatric multivit no.5-iron-folic acid 5 mg-100 mcg oral powder packt.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t4q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t4[]" value="morning" > MORNING
+      <input type="checkbox" name="t4[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t4[]" value="evening"> EVENING
+      <input type="checkbox" name="t4[]" value="night" > NIGHT<br>
+
+
+    </div>
+
+
+    <div id="BOC" style="display: none">
+      <input name="BOC Approved" type="checkbox" value=" Phendiet-105 capsule" id="myId">
+      Phendiet-105 capsule.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t5q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t5[]" value="morning" > MORNING
+      <input type="checkbox" name="t5[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t5[]" value="evening"> EVENING
+      <input type="checkbox" name="t5[]" value="night" > NIGHT<br>
+      <input name="BOC Approved" type="checkbox" value="Melfiat-105 capsule" id="myId">
+      Melfiat-105 capsule.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t6q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t6[]" value="morning" > MORNING
+      <input type="checkbox" name="t6[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t6[]" value="evening"> EVENING
+      <input type="checkbox" name="t6[]" value="night" > NIGHT<br>
+      <input name="BOC Approved" type="checkbox" value="HYREX-105 capsule" id="myId">
+      HYREX-105 capsule.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t7q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t7[]" value="morning" > MORNING
+      <input type="checkbox" name="t7[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t7[]" value="evening"> EVENING
+      <input type="checkbox" name="t7[]" value="night" > NIGHT<br>
+
+
+    </div>
+
+
+
+    <div id="B" style="display: none">
+      <input name="B Approved" type="checkbox" value="polyoxyl 40 stearate Wax" id="myId">
+      polyoxyl 40 stearate Wax.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t8q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t8[]" value="morning" > MORNING
+      <input type="checkbox" name="t8[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t8[]" value="evening"> EVENING
+      <input type="checkbox" name="t8[]" value="night" > NIGHT<br>
+      <input name="B Approved" type="checkbox" value="paracetomol" id="myId">
+      paracetomol.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t9q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t9[]" value="morning" > MORNING
+      <input type="checkbox" name="t9[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t9[]" value="evening"> EVENING
+      <input type="checkbox" name="t9[]" value="night" > NIGHT<br>
+      <input name="B Approved" type="checkbox" value="Multilyte-40 Solution" id="myId">
+      Multilyte-40 Solution.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t10q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t10[]" value="morning" > MORNING
+      <input type="checkbox" name="t10[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t10[]" value="evening"> EVENING
+      <input type="checkbox" name="t10[]" value="night" > NIGHT<br>
+    </div>
+
+    <div id="BI" style="display: none">
+      <input name="BI Approved" type="checkbox" value="Keratol 40 Lotion" id="myId">
+      Keratol 40 Lotion.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t11q[]" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t11[]" value="morning" > MORNING
+      <input type="checkbox" name="t11[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t11[]" value="evening"> EVENING
+      <input type="checkbox" name="t11[]" value="night" > NIGHT<br>
+      <input name="BI Approved" type="checkbox" value=" polysorbate 40 Liquid" id="myId">
+      polysorbate 40 Liquid.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t12q[]" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t12[]" value="morning" > MORNING
+      <input type="checkbox" name="t12[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t12[]" value="evening"> EVENING
+      <input type="checkbox" name="t12[]" value="night" > NIGHT<br>
+      <input name="BI Approved" type="checkbox" value="polyoxyl 40 stearate Wax " id="myId">
+      polyoxyl 40 stearate Wax .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t13q[]" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t13[]" value="morning" > MORNING
+      <input type="checkbox" name="t13[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t13[]" value="evening"> EVENING
+      <input type="checkbox" name="t13[]" value="night" > NIGHT<br>
+    </div>
+    <div id="BA" style="display: none">
+      <input name="BA Approved" type="checkbox" value="Hydro 40 Foam" id="myId">
+      Hydro 40 Foam.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t14q[]" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t14[]" value="morning" > MORNING
+      <input type="checkbox" name="t14[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t14[]" value="evening"> EVENING
+      <input type="checkbox" name="t14[]" value="night" > NIGHT<br>
+      <input name="BA Approved" type="checkbox" value="Zodryl AC 40" id="myId">
+      Zodryl AC 40.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t15q[]" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t15[]" value="morning" > MORNING
+      <input type="checkbox" name="t15[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t15[]" value="evening"> EVENING
+      <input type="checkbox" name="t15[]" value="night" > NIGHT<br>
+      <input name="BA Approved" type="checkbox" value="Zodryl DEC 40" id="myId">
+      Zodryl DEC 40.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t16q[]" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t16[]" value="morning" > MORNING
+      <input type="checkbox" name="t16[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t16[]" value="evening"> EVENING
+      <input type="checkbox" name="t16[]" value="night" > NIGHT<br>
+    </div>
+
+    <input type="submit" value="submit">
+    <form>
+</body>
+
+</html>

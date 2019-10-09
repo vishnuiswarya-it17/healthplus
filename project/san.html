@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <script>
+
+    function ShowHideDiv2() {
+      var Payment1 = document.getElementById("Payment1");
+      var BCO = document.getElementById("BCO");
+      BCO.style.display = Payment1.value == "FEVER " ? "block" : "none";
+      document.getElementById("myId").required = (BCO.style.display == "block");
+
+ }
+
+
+$(document).ready(function() {
+    $('#Rank').bind('change', function() {
+        var elements = $('div.container').children().hide(); // hide all the elements
+        var value = $(this).val();
+
+        if (value.length) { // if somethings' selected
+            elements.filter('.' + value).show(); // show the ones we want
+        }
+    }).trigger('change');
+});
+
+  </script>
+</head>
+
+<body>
+    
+<select size="1" id="Rank" title="" name="Rank">
+    <option value="">-Select desease type-</option>
+    <option value="low">low</option>
+    <option value="sevior">Sevior</option>
+</select>
+
+<div class="container">
+    <div class="low">
+        Low dosage medicine
+    </div>
+    <div class="sevior">
+        high dosage medicine
+    </div>
+</div>
+
+<div class="container">
+    <div class="low">
+     <select name="Payment 1" id="Payment1" editable="true" onchange="ShowHideDiv2()">
+      <option value="null" selected>Select... </option>
+      <option value="FEVER ">FEVER</option>
+       </select>
+
+
+<div id="BCO" style="display: none">
+
+      
+      <input name="BCO Approved" type="checkbox" value="Tussin PE 5 mg-100 mg/5 mL oral liquid" id="myId">
+      Tussin PE 5 mg-100 mg/5 mL oral liquid.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t1q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t1[]" value="morning" > MORNING
+      <input type="checkbox" name="t1[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t1[]" value="evening"> EVENING
+      <input type="checkbox" name="t1[]" value="night" > NIGHT<br>
+    
+
+ <input name="BCO Approved" type="checkbox" value="Pseudogest 15 mg-5 mg-100 mg/5 mL syrup" id="myId">
+      Pseudogest 15 mg-5 mg-100 mg/5 mL syrup.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t2q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t2[]" value="morning" > MORNING
+      <input type="checkbox" name="t2[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t2[]" value="evening"> EVENING
+      <input type="checkbox" name="t2[]" value="night" > NIGHT<br>
+     
+
+
+ <input name="BCO Approved" type="checkbox" value=" pyridoxal-5 phosphate (bulk) 100 % powder" id="myId">
+      pyridoxal-5 phosphate (bulk) 100 % powder.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t3q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t3[]" value="morning" > MORNING
+      <input type="checkbox" name="t3[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t3[]" value="evening"> EVENING
+      <input type="checkbox" name="t3[]" value="night" > NIGHT<br>
+     
+
+ <input name="BCO Approved" type="checkbox" value=" pediatric multivit no.5-iron-folic acid 5 mg-100 mcg oral powder packt" id="myId">
+      pediatric multivit no.5-iron-folic acid 5 mg-100 mcg oral powder packt.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t4q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t4[]" value="morning" > MORNING
+      <input type="checkbox" name="t4[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t4[]" value="evening"> EVENING
+      <input type="checkbox" name="t4[]" value="night" > NIGHT<br>
+
+
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

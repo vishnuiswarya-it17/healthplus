@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script>
+
+
+$(document).ready(function() {
+    $('#Rank').bind('change', function() {
+        var elements = $('div.container').children().hide(); // hide all the elements
+        var value = $(this).val();
+
+        if (value.length) { // if somethings' selected
+            elements.filter('.' + value).show(); // show the ones we want
+        }
+    }).trigger('change');
+
+</script>
+
+<body>
+<select size="1" id="Rank" title="" name="Rank">
+    <option value="">-Select Your Rank-</option>
+    <option value="airman">Airman</option>
+    <option value="senior-airman">Senior Airman</option>
+</select>
+
+
+
+<div class="container">
+    <div class="airman">
+        <select>
+            <option>Airman Stuff</option>
+        </select>
+    </div>
+    <div class="senior-airman">
+        <select>
+            <option>Senior Airman Stuff</option>
+        </select>
+    </div>
+</div>
+
+</body>
+</html>

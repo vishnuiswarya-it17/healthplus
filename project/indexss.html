@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <script>
+var _data = {};
+        var _data = {"low":{"dev":"tablet1","test":"tablet2"},"sivier":{"dev":"tablet3","test":"tablet4"}};
+</script>
+
+
+ <script>
+ function ShowHideDiv2() {
+      var Payment1 = document.getElementById("Payment1");
+      var BCO = document.getElementById("BCO");
+      BCO.style.display = Payment1.value == "FEVER " ? "block" : "none";
+      document.getElementById("myId").required = (BCO.style.display == "block");
+
+</script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>Filling dropdown options using javascript</h1>
+    <div class="col-sm-4 row">
+<select class="form-control" id="env-select">
+<option value="">-- Select --</option>
+         <option value="low">low</option>
+        <option value="sivier">sivier</option>
+        
+</select>
+</div>
+<div class="col-sm-4">
+<select class="form-control"  id="env_ddl">
+<option value="">-- Select --</option>
+</select>
+</div>
+<body>
+<form action="result.php">
+    <select name="Payment 1" id="Payment1" editable="true" onchange="ShowHideDiv2()">
+      <option value="null" selected>Select... </option>
+      <option value="FEVER ">FEVER</option>
+</select>
+</body>
+
+
+  </div>
+</body>
+</html>
+
+
+<div id="BCO" style="display: none">
+
+      
+      <input name="BCO Approved" type="checkbox" value="Tussin PE 5 mg-100 mg/5 mL oral liquid" id="myId">
+      Tussin PE 5 mg-100 mg/5 mL oral liquid.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t1q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t1[]" value="morning" > MORNING
+      <input type="checkbox" name="t1[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t1[]" value="evening"> EVENING
+      <input type="checkbox" name="t1[]" value="night" > NIGHT<br>
+    
+
+ <input name="BCO Approved" type="checkbox" value="Pseudogest 15 mg-5 mg-100 mg/5 mL syrup" id="myId">
+      Pseudogest 15 mg-5 mg-100 mg/5 mL syrup.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t2q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t2[]" value="morning" > MORNING
+      <input type="checkbox" name="t2[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t2[]" value="evening"> EVENING
+      <input type="checkbox" name="t2[]" value="night" > NIGHT<br>
+     
+
+
+ <input name="BCO Approved" type="checkbox" value=" pyridoxal-5 phosphate (bulk) 100 % powder" id="myId">
+      pyridoxal-5 phosphate (bulk) 100 % powder.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t3q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t3[]" value="morning" > MORNING
+      <input type="checkbox" name="t3[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t3[]" value="evening"> EVENING
+      <input type="checkbox" name="t3[]" value="night" > NIGHT<br>
+     
+
+ <input name="BCO Approved" type="checkbox" value=" pediatric multivit no.5-iron-folic acid 5 mg-100 mcg oral powder packt" id="myId">
+      pediatric multivit no.5-iron-folic acid 5 mg-100 mcg oral powder packt.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="number" name="t4q" min="1" max="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" name="t4[]" value="morning" > MORNING
+      <input type="checkbox" name="t4[]" value="afternoon"> AFTERNOON
+      <input type="checkbox" name="t4[]" value="evening"> EVENING
+      <input type="checkbox" name="t4[]" value="night" > NIGHT<br>
+
+
+    </div>
+
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#env-select').on('change', function(e){
+        var source = $(this),
+            val = $.trim(source.val()),
+            target = $('#env_ddl');
+			$(target).empty();
+        if(typeof(_data[val]) != "undefined"){
+            var options = (typeof(_data[val]) != "undefined") ? _data[val] : {};
+			 $('<option>-- Select --</option>').appendTo(target);
+            $.each( options , function(value, index) {
+                    $('<option value="' + value + '">' + index + '</option>').appendTo(target);
+            });
+        }
+
+    });
+  });
+</script>

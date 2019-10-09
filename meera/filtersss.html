@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .button {
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+    }
+
+    .button:hover {
+      background-color: #3e8e41
+    }
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    * {
+      box-sizing: border-box;
+
+    }
+
+    input[type=text],
+    select,
+    textarea {
+      width: 25%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+
+    }
+
+    label {
+      padding: 8px 8px 8px 0;
+      display: inline-block;
+
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 25px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 25px) {
+
+      .col-25,
+      .col-75,
+      input[type=submit] {
+        width: 25%;
+        margin-top: 0;
+      }
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+
+  <center><button class="button">TABLET </button></center><br /><br />
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  div {
+    display: inline-block;
+  }
+</style>
+</head>
+
+<body bgcolor="black">
+  <form action="echo.php" method="post">
+    <input type="text" value="" name="searchColumn" id="searchColumn" /><br />
+    <font color="blue">
+      <div><input type="checkbox" value="Aceon">Aceon </div><br />
+
+      <div class="row">
+        <div class="col-25">
+          <input type="checkbox" value="Aceon"> Aceon
+        </div>
+        <div class="col-25">
+          <input type="number" name="quantity" min="1" max="50">
+        </div>
+        <div class="col-50">
+          <input type="radio" name="gender" value="male" checked> MORNING
+          <input type="radio" name="gender" value="female"> AFTERNOON
+          <input type="radio" name="gender" value="other"> EVENING
+          <input type="radio" name="gender" value="male" checked> NIGHT<br>
+        </div>
+      </div>
+
+      <div><input type="checkbox" value="acetaminophen ">acetaminophen </div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Activase (alteplase)">Activase (alteplase)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Actimmune (interferon)">Actimmune (interferon)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Actos (pioglitazone)">Actos (pioglitazone)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="acyclovir">acyclovir</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Adalat (nifedipine)">Adalat (nifedipine)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="adalimumab">adalimumab</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="adapalene">adapalene</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Adapin (doxepin)">Adapin (doxepin)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Advil (ibuprofen)">Advil (ibuprofen)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Advil (IBUPROFEN-ORAL)">Advil (IBUPROFEN-ORAL)</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="baclofen">baclofen</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="bacitracin-ophthalmic">bacitracin-ophthalmic</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="Bactrim vs Cefdinir">Bactrim vs Cefdinir</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="becaplermin">becaplermin</div><br />
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="belimumab">belimumab</div>
+      <br>
+
+      <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+  
+      <div><input type="checkbox" value="benzonatate">benzonatate<br>
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="cabergoline-oral">cabergoline-oral</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="Calan SR (verapamil)">Calan SR (verapamil)</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="Calcimar (calcitonin)">Calcimar (calcitonin)</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="canagliflozin">canagliflozin</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="Canasa (mesalamine)">Canasa (mesalamine)</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="Daypro (oxaprozin)">Daypro (oxaprozin)<br />
+
+          <div class="row">
+              <div class="col-25">
+                <input type="checkbox" value="Aceon"> Aceon
+              </div>
+              <div class="col-25">
+                <input type="number" name="quantity" min="1" max="50">
+              </div>
+              <div class="col-50">
+                <input type="radio" name="gender" value="male" checked> MORNING
+                <input type="radio" name="gender" value="female"> AFTERNOON
+                <input type="radio" name="gender" value="other"> EVENING
+                <input type="radio" name="gender" value="male" checked> NIGHT<br>
+              </div>
+            </div>
+      
+          <div><input type="checkbox" value="Deltasone (prednisone)">Deltasone (prednisone)</div>
+          <br>
+
+          <div class="row">
+              <div class="col-25">
+                <input type="checkbox" value="Aceon"> Aceon
+              </div>
+              <div class="col-25">
+                <input type="number" name="quantity" min="1" max="50">
+              </div>
+              <div class="col-50">
+                <input type="radio" name="gender" value="male" checked> MORNING
+                <input type="radio" name="gender" value="female"> AFTERNOON
+                <input type="radio" name="gender" value="other"> EVENING
+                <input type="radio" name="gender" value="male" checked> NIGHT<br>
+              </div>
+            </div>
+      
+          <div><input type="checkbox" value="demeclocycline-oral">demeclocycline-oral<br>
+
+            <div class="row">
+                <div class="col-25">
+                  <input type="checkbox" value="Aceon"> Aceon
+                </div>
+                <div class="col-25">
+                  <input type="number" name="quantity" min="1" max="50">
+                </div>
+                <div class="col-50">
+                  <input type="radio" name="gender" value="male" checked> MORNING
+                  <input type="radio" name="gender" value="female"> AFTERNOON
+                  <input type="radio" name="gender" value="other"> EVENING
+                  <input type="radio" name="gender" value="male" checked> NIGHT<br>
+                </div>
+              </div>
+        
+            <div><input type="checkbox" value="Depakene (VALPROIC ACID-ORAL CAPSULE)">Depakene (VALPROIC ACID-ORAL
+              CAPSULE)</div><br />
+
+              <div class="row">
+                  <div class="col-25">
+                    <input type="checkbox" value="Aceon"> Aceon
+                  </div>
+                  <div class="col-25">
+                    <input type="number" name="quantity" min="1" max="50">
+                  </div>
+                  <div class="col-50">
+                    <input type="radio" name="gender" value="male" checked> MORNING
+                    <input type="radio" name="gender" value="female"> AFTERNOON
+                    <input type="radio" name="gender" value="other"> EVENING
+                    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+                  </div>
+                </div>
+          
+            <div><input type="checkbox" value="echothiophate iodide-ophthalmic">echothiophate iodide-ophthalmic solution
+            </div><br />
+
+            <div class="row">
+                <div class="col-25">
+                  <input type="checkbox" value="Aceon"> Aceon
+                </div>
+                <div class="col-25">
+                  <input type="number" name="quantity" min="1" max="50">
+                </div>
+                <div class="col-50">
+                  <input type="radio" name="gender" value="male" checked> MORNING
+                  <input type="radio" name="gender" value="female"> AFTERNOON
+                  <input type="radio" name="gender" value="other"> EVENING
+                  <input type="radio" name="gender" value="male" checked> NIGHT<br>
+                </div>
+              </div>
+        
+            <div><input type="checkbox" value="efavirenz">efavirenz</div><br />
+
+            <div class="row">
+                <div class="col-25">
+                  <input type="checkbox" value="Aceon"> Aceon
+                </div>
+                <div class="col-25">
+                  <input type="number" name="quantity" min="1" max="50">
+                </div>
+                <div class="col-50">
+                  <input type="radio" name="gender" value="male" checked> MORNING
+                  <input type="radio" name="gender" value="female"> AFTERNOON
+                  <input type="radio" name="gender" value="other"> EVENING
+                  <input type="radio" name="gender" value="male" checked> NIGHT<br>
+                </div>
+              </div>
+        
+            <div><input type="checkbox" value="efinaconazole Jublia">efinaconazole Jublia</div><br />
+
+            <div class="row">
+                <div class="col-25">
+                  <input type="checkbox" value="Aceon"> Aceon
+                </div>
+                <div class="col-25">
+                  <input type="number" name="quantity" min="1" max="50">
+                </div>
+                <div class="col-50">
+                  <input type="radio" name="gender" value="male" checked> MORNING
+                  <input type="radio" name="gender" value="female"> AFTERNOON
+                  <input type="radio" name="gender" value="other"> EVENING
+                  <input type="radio" name="gender" value="male" checked> NIGHT<br>
+                </div>
+              </div>
+        
+            <div><input type="checkbox" value="felbamate-oral tablet">felbamate-oral tablet</div><br />
+          </div><br />
+        </div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="felodipine">felodipine</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="fenoprofen">fenoprofen</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="fexofenadine and pseudoephedrine">fexofenadine and pseudoephedrine</div>
+        <br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="finasteride">finasteride</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+        <div><input type="checkbox" value="Flexeril (cyclobenzaprine)">Flexeril (cyclobenzaprine)</div><br />
+
+        <div class="row">
+            <div class="col-25">
+              <input type="checkbox" value="Aceon"> Aceon
+            </div>
+            <div class="col-25">
+              <input type="number" name="quantity" min="1" max="50">
+            </div>
+            <div class="col-50">
+              <input type="radio" name="gender" value="male" checked> MORNING
+              <input type="radio" name="gender" value="female"> AFTERNOON
+              <input type="radio" name="gender" value="other"> EVENING
+              <input type="radio" name="gender" value="male" checked> NIGHT<br>
+            </div>
+          </div>
+    
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+
+          $(document).ready(function () {
+
+            $("#searchColumn").on("input", function () {
+
+              var searchTxt = $(this).val();
+              searchTxt = searchTxt.replace(/[.()+]/g, "\\$&");
+
+              var patt = new RegExp("^" + searchTxt, "i");
+
+              $(":checkbox").each(function () {
+
+                if (patt.test($(this).val()))
+                  $(this).closest("div").show(1000);
+
+                else
+                  $(this).closest("div").hide(500);
+
+              })
+            })
+          })
+        </script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    window.onload = function () {
+      btnInsert = document.getElementById("btnInsert");
+      btnEdit = document.getElementById("btnEdit");
+      btnDelete = document.getElementById("btnDelete");
+      vname = document.getElementById("tbName");
+      ul = document.getElementsByTagName("ul")[0];
+
+      btnInsert.onclick = insert;
+      btnDelete.onclick = remove;
+    }
+
+    function insert() {
+      li = document.createElement("li");
+      li.innerHTML = vname.value;
+      li.innerHTML += " <input type='checkbox' onclick='select()'          value='Select' /> ";
+      ul.appendChild(li);
+      vname.value = "";
+    }
+
+    function select() {
+      alert("Checked");
+    }
+
+    function remove() {
+      var lis = document.getElementsByTagName("li");
+      for (i = 0; i < lis.length; i++) {
+        lis[i].onclick = function () {
+          this.remove();
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <label for="tbName"> </label>
+  <input name="tbName" id="tbName" /><br /><br />
+  <button id="btnInsert">Insert</button>
+  <button id="btnEdit">Edit</button>
+  <button id="btnDelete">Delete</button>
+  <br /><br />
+  <ul>
+  </ul>
+  <html>
+
+  <body>
+
+    <div align="left" style="border:1px solid red">
+
+
+      <form>
+        <div class="row">
+          <div class="col-25">
+            <input type="checkbox" value="Aceon"> Aceon
+          </div>
+          <div class="col-25">
+            <input type="number" name="quantity" min="1" max="50">
+          </div>
+          <div class="col-50">
+            <input type="radio" name="gender" value="male" checked> MORNING
+            <input type="radio" name="gender" value="female"> AFTERNOON
+            <input type="radio" name="gender" value="other"> EVENING
+            <input type="radio" name="gender" value="male" checked> NIGHT<br>
+          </div>
+        </div>
+
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+      <form>
+        <input type="number" name="quantity" min="1" max="50">
+
+      </form>
+    </div>
+
+    </center>
+  </body>
+
+  </html>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+  <form>
+    <input type="radio" name="gender" value="male" checked> MORNING
+    <input type="radio" name="gender" value="female"> AFTERNOON
+    <input type="radio" name="gender" value="other"> EVENING
+    <input type="radio" name="gender" value="male" checked> NIGHT<br>
+
+  </form>
+
+
+
+
+  <html>
+
+  <head>
+    <style>
+      $green: #1ECD97;
+      $gray: #bbbbbb;
+
+      * {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -65px;
+        margin-top: -20px;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+      }
+
+      button {
+        outline: none;
+        height: 40px;
+        text-align: center;
+        width: 130px;
+        border-radius: 40px;
+        background: #fff;
+        border: 2px solid $green;
+        color: $green;
+        letter-spacing: 1px;
+        text-shadow: 0;
+
+        font: {
+          size: 12px;
+          weight: bold;
+        }
+
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover {
+          color: white;
+          background: $green;
+        }
+
+        &:active {
+          //letter-spacing: 2px;
+          letter-spacing: 2px;
+        }
+
+        &:after {
+          content: "SUBMIT";
+        }
+      }
+
+      .onclic {
+        width: 20px;
+        border-color: $gray;
+        border-width: 3px;
+        font-size: 0;
+        border-left-color: $green;
+        animation: rotating 2s 0.25s linear infinite;
+
+        &:after {
+          content: "";
+        }
+
+        &:hover {
+          color: $green;
+          background: white;
+        }
+      }
+
+      .validate {
+        font-size: 13px;
+        color: white;
+        background: $pink;
+
+        &:after {
+          font-family: 'FontAwesome';
+          content: "\f00c";
+        }
+      }
+
+      @keyframes rotating {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <div class="container">
+        <button id="button">SUBMIT</button>
+      </div>
+    </center>
+    <script>
+      $(function () {
+        $("#button").click(function () {
+          $("#button").addClass("onclic", 250, validate);
+        });
+
+        function validate() {
+          setTimeout(function () {
+            $("#button").removeClass("onclic");
+            $("#button").addClass("validate", 450, callback);
+          }, 2250);
+        }
+        function callback() {
+          setTimeout(function () {
+            $("#button").removeClass("validate");
+          }, 1250);
+        }
+      });
+    </script>
+  </body>
